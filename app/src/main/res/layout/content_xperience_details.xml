@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xperienceit.XperienceDetailsActivity"
+    tools:showIn="@layout/activity_xperience_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/xperience_name"
+            layout="@layout/description_card" />
+
+        <include
+            android:id="@+id/small_description_card"
+            layout="@layout/description_card" />
+
+        <include
+            android:id="@+id/description_card"
+            layout="@layout/description_card" />
+
+        <include
+            android:id="@+id/included_items_card"
+            layout="@layout/included_items_card" />
+
+        <include
+            android:id="@+id/excluded_items_card"
+            layout="@layout/excluded_items_card" />
+
+        <include
+            android:id="@+id/special_features"
+            layout="@layout/description_card" />
+
+        <include
+            android:id="@+id/about_deals_card"
+            layout="@layout/about_deals_card" />
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            map:cameraZoom="13"
+            map:liteMode="true"
+            map:uiRotateGestures="true"
+            map:uiZoomControls="true"
+            map:uiZoomGestures="true" />
+
+        <include
+            android:id="@+id/terms_n_conditions"
+            layout="@layout/policy_card" />
+
+        <include
+            android:id="@+id/cancellation_card"
+            layout="@layout/policy_card" />
+
+        <include
+            android:id="@+id/privacy_card"
+            layout="@layout/policy_card" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

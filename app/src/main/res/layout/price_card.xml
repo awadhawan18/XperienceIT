@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/big_margin"
+    android:background="@color/white_text"
+    android:padding="@dimen/cardview_padding"
+    cardview:cardBackgroundColor="@color/fabMenuBackground"
+    cardview:cardCornerRadius="3dp"
+    cardview:cardElevation="@dimen/cardview_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/package_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="3"
+                android:textAppearance="@style/CardViewText"
+                android:textSize="@dimen/text_size_large" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_gray"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:textAppearance="@style/CardViewText"
+                android:textSize="@dimen/text_size_large" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_gray"
+            android:padding="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="3"
+                android:text="Total:"
+                android:textAppearance="@style/CardViewHeading"
+                android:textSize="@dimen/xtra_large_text" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_gray"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:textAppearance="@style/CardViewText"
+                android:textSize="@dimen/text_size_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

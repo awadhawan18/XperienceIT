@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookingReceipt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:padding="@dimen/frame_bottom_padding"
+            android:text="Invoice Details"
+            android:textAppearance="@style/FabIconTextViewStyle"
+            android:textColor="#000" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_margin"
+            android:background="@drawable/box"
+            android:padding="@dimen/cardview_padding"
+            android:shrinkColumns="0"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Invoice Number "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/invoice_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Invoice Date "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/invoice_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Amount Paid "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/amount_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:padding="@dimen/frame_bottom_padding"
+            android:text="Billing Details"
+            android:textAppearance="@style/FabIconTextViewStyle"
+            android:textColor="#000" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_margin"
+            android:background="@drawable/box"
+            android:padding="@dimen/cardview_padding"
+            android:shrinkColumns="0"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Bill To"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Contact "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/contact_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Email "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/customer_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:padding="@dimen/frame_bottom_padding"
+            android:text="Xperience Details"
+            android:textAppearance="@style/FabIconTextViewStyle"
+            android:textColor="#000" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_margin"
+            android:background="@drawable/box"
+            android:padding="@dimen/cardview_padding"
+            android:shrinkColumns="0"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/xperience_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Date"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Time "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:singleLine="true"
+                    android:text="Venue "
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+
+                <TextView
+                    android:id="@+id/venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:textAppearance="@style/CardViewText"
+                    android:textSize="@dimen/text_size_large"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:padding="@dimen/frame_bottom_padding"
+            android:text="Order Summary"
+            android:textAppearance="@style/FabIconTextViewStyle"
+            android:textColor="#000" />
+
+        <include
+            android:id="@+id/package_details"
+            layout="@layout/order_summary" />
+
+        <Button
+            android:id="@+id/explore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/book_now_text"
+            android:padding="16dp"
+            android:text="Explore more"
+            android:textColor="@color/white_text" />
+
+
+    </LinearLayout>
+
+</ScrollView>

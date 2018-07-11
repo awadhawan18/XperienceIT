@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffc65c</color>
+    <color name="colorPrimaryDark">#fcb84a</color>
+    <color name="colorAccent">#e67f37</color>
+    <color name="fabMenuBackground">#fdfcfb</color>
+    <color name="black_text">#000000</color>
+    <color name="white_text">#ffffff</color>
+    <color name="bg_gray">#9c000000</color>
+    <color name="light_blue_text">#6dbffa</color>
+    <color name="cardview_text">#353434</color>
+
+    <color name="colorslide_1">#009688</color>
+    <color name="colorslide_2">#795548</color>
+    <color name="colorslide_3">#8BC34A</color>
+    <color name="colorslide_4">#3F51B5</color>
+
+    <color name="active_dots">#fffafa</color>
+    <color name="inactive_dots">#83878b</color>
+
+    <color name="book_now_text">#3F51B5</color>
+    <color name="google_login_button">#fff</color>
+    <color name="facebook_login_button">#fff</color>
+</resources>

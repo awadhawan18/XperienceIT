@@ -1,0 +1,32 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="text_margin">4dp</dimen>
+
+    <dimen name="xtra_small_margin">2dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="big_margin">6dp</dimen>
+    <dimen name="bigger_margin">8dp</dimen>
+
+    <dimen name="grid_column_max_width">100dp</dimen>
+    <dimen name="grid_image_height">120dp</dimen>
+
+    <dimen name="main_page_carousel_height">230dp</dimen>
+    <dimen name="main_page_cardview_margin">8dp</dimen>
+
+    <dimen name="search_bar_height">50dp</dimen>
+    <dimen name="search_bar_padding">10dp</dimen>
+    <dimen name="progress_bar_height">60dp</dimen>
+
+    <dimen name="frame_menu_width">250dp</dimen>
+    <dimen name="frame_margin_top">5dp</dimen>
+    <dimen name="frame_bottom_padding">10dp</dimen>
+
+    <dimen name="cardview_text_padding">8dp</dimen>
+    <dimen name="cardview_padding">5dp</dimen>
+    <dimen name="cardview_margin">5dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="cardview_elevation">3dp</dimen>
+    <dimen name="cardview_small_elevation">2dp</dimen>
+</resources>

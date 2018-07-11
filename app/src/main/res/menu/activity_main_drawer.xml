@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/user_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Sign In" />
+        <item
+            android:id="@+id/user_cart"
+            android:icon="@drawable/cart_icon"
+            android:title="Cart" />
+        <item
+            android:id="@+id/user_wishlist"
+            android:icon="@drawable/wishlist_icon"
+            android:title="Wishlist" />
+        <item
+            android:id="@+id/user_coupons"
+            android:icon="@drawable/redeem_icon"
+            android:title="Redeem" />
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/contact_icon"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/terms_n_conditions"
+            android:icon="@drawable/tnc_icon"
+            android:title="Terms And Conditions" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/privacy_icon"
+            android:title="Privacy Policy" />
+
+    </group>
+
+
+</menu>

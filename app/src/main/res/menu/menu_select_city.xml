@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xperienceit.com.xperienceit.XperienceDetailsActivity">
+    <item
+        android:id="@+id/select_city"
+        android:title="Select City"
+        app:showAsAction="always">
+        <menu>
+            <!-- empty submenu, filled programatically -->
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.xperienceit.XperienceDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="left"
+            app:collapsedTitleTextAppearance="@style/CollapsedToolbarTextStyle"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="8dp"
+            app:expandedTitleTextAppearance="@style/ExpandedToolbarTextStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:maxLines="3"
+            app:toolbarId="@+id/toolbar">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                app:fillColor="#FFFFFFFF"
+                app:layout_collapseMode="parallax"
+                app:pageColor="#00000000"
+                app:radius="4dp"
+                app:slideInterval="2500"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_xperience_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <Button
+        android:id="@+id/book_now"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/book_now_text"
+        android:text="@string/book_now"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_margin"
+    android:padding="@dimen/cardview_padding"
+    cardview:cardBackgroundColor="@color/fabMenuBackground"
+    cardview:cardCornerRadius="@dimen/card_radius"
+    cardview:cardElevation="@dimen/cardview_elevation">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/cardview_text_padding"
+                android:text="@string/include_card_heading"
+                android:textAppearance="@style/CardViewHeading" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:src="@drawable/arrangements" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_gray"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/included_items_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cardview_text_padding"
+            android:textAppearance="@style/CardViewText" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
